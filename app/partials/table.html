@@ -1,0 +1,15 @@
+<table class="custom-table">
+    <tr>
+        <th class="custom-th">Name</th>
+        <th class="custom-th">Description</th>
+        <th class="custom-th">Actions</th>
+    </tr>
+    <tr class="custom-tr" ng-repeat="item in items">
+        <td class="custom-td">{{ item.name }}</td>
+        <td class="custom-td">{{ item.description }}</td>
+        <td class="custom-td">
+            <button class="action-btn edit-btn" ng-click="startEdit(item)">Edit</button>
+            <button class="action-btn delete-btn" ng-click="deleteItem(item)">Delete</button>
+        </td>
+    </tr>
+</table>

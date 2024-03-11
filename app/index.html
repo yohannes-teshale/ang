@@ -1,0 +1,41 @@
+<html ng-app="myApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>AngularJS App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+<div ng-controller="MainController">
+  <header class="main_header">
+      <h1>MOCI TEAMS </h1>
+  </header>
+  <form class="form-container" ng-submit="addItem()">
+    <input type="text" class="input-text" ng-model="newItem.name" placeholder="Item name" required>
+    <input type="text" class="input-text" ng-model="newItem.description" placeholder="Description" required>
+    <button type="submit" class="submit-btn">Add Item</button>
+</form>
+
+<table class="custom-table">
+  <tr>
+      <th class="custom-th">Name</th>
+      <th class="custom-th">Description</th>
+      <th class="custom-th">Actions</th>
+  </tr>
+  <tr class="custom-tr" ng-repeat="item in items">
+      <td class="custom-td">{{ item.name }}</td>
+      <td class="custom-td">{{ item.description }}</td>
+      <td class="custom-td">
+          <button class="action-btn edit-btn" ng-click="startEdit(item)">Edit</button>
+          <button class="action-btn delete-btn" ng-click="deleteItem(item)">Delete</button>
+      </td>
+  </tr>
+</table>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.custom-th, .custom-td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-th {
+    background-color: #f8f9fa;
+}
+
+.custom-tr:hover {
+    background-color: #f2f2f2;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
+.form-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-text, .submit-btn {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.input-text:focus {
+    border-color: #007bff;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+.main_header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}

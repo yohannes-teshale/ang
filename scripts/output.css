@@ -1,0 +1,35 @@
+.form-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.custom-th {
+    background-color: #f8f9fa;
+}
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit-btn {
+    background-color: #ffc107;
+    color: #fff;
+}
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
